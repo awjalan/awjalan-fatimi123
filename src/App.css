@@ -1,0 +1,139 @@
+/* List three ways to select html elements in css */
+/* using # which refer to ID, and using (.) which refer to class and using (*) for selecting all the element in html page  */
+
+body {
+  background-color: #eee;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background : url('https://drive.google.com/uc?id=1ADdMAd8sSM1GxabjRUpJaqliyYQMxixu');
+  background-size: cover;
+  background-position: center;
+  color: #ccc;
+  display: flex;
+  /* What does 'display: flex' do?*/
+  /* It's for layouting the objects in area */
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  margin: 40px;
+}
+
+.title {
+  margin: 40px;
+  padding: 15px;
+  border: dotted #ccc 6px;
+  border-radius: 15px;
+}
+
+.italic {
+  margin: 40px;
+  font-size: 24px;
+  /* px, __em___, and __rem___ are 3 measurements units in CSS */
+  font-style: italic;
+}
+
+.bootcamp {
+  padding: 20px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.bootcamp p,
+li {
+  margin: 10px;
+  
+}
+
+#awesome{
+  display: none;
+}
+
+footer {
+  display: inline;
+  justify-content: space-between;
+  
+}
+
+
+
+#searchBox {
+  margin: 0 5px 0 2rem;
+  
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #dda65f;
+}
+
+#searchBox::selection {
+  border-color: #3a7ddd;
+}
+
+button{
+  
+   
+padding: 5px 15px;
+float: right;
+margin: 0rem 11rem ; 
+}
+
+
+.buttons{
+  margin: 2rem;
+  
+
+}
+
+#searchBtn{
+  cursor: pointer;
+  background-color: #dda65f;
+  /* add border color to match the background color */
+  border-color: #dda65f;
+  color: white;
+  font-size: 19px;
+  padding: 4px 11px;
+  border-radius: 8px;
+}
+
+footer span {
+  float: right ;
+  margin-top: -1.5rem;
+  padding: -10rem;
+}
+
+#awesomeBtn, #infoBtn {
+  
+  cursor: pointer;
+  background-color: #dda65f;
+  /* add border color to match the background color */
+  border-color: #dda65f;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+}
+#searchBtn:hover ,
+#awesomeBtn:hover, #infoBtn:hover {
+  background-color: #3a7ddd;
+  
+  border-color: #3a7ddd;
+
+}
+
+/* Make the mouse curser look like a hand when you hover over the buttons (#infoBtn, #searchBtn, #awesomeBtn) and add backgound and border color of #3a7ddd*/
+
+.socialIcon {
+
+  width: 25px;
+  margin: 2rem 1rem 0 1rem;
+  
+
+}
